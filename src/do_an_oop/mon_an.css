@@ -1,0 +1,18 @@
+#loai_mon_an_1{
+    -fx-background-image: url("img/salad.jpg");
+    -fx-background-position: center;
+}
+#b1{
+    -fx-background-image:url("img/background.jpg");
+}
+#c1{
+    -fx-border: solid;
+    -fx-background-color:white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#a1{
+    
+}
+#AnchorPane{
+    -fx-background-color:white;
+}

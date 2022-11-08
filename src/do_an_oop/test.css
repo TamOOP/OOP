@@ -1,0 +1,7 @@
+.tab{
+    -fx-background-color:white;
+    height: 700px;
+}
+#background{
+     -fx-background-image: url("img/background.jpg");
+}
