@@ -1,0 +1,1638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="725.0" prefWidth="1094.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookingNotebook.controllers.menuthucongController">
+   <children>
+      <HBox prefWidth="1094.0">
+         <children>
+            <VBox prefHeight="667.0" prefWidth="329.0" style="-fx-background-color: #b2a697;" stylesheets="@mon_an.css">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#goBack" prefHeight="38.0" prefWidth="82.0" style="-fx-border-radius: 20; -fx-background-color: white; -fx-background-radius: 20; -fx-text-fill: black; -fx-border-color: #04AA6D;" text="&lt; Back">
+                     <VBox.margin>
+                        <Insets bottom="7.0" left="20.0" top="7.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Pane prefWidth="200.0">
+                     <children>
+                        <Button fx:id="vegetableBut" mnemonicParsing="false" onAction="#VegetableOn" prefHeight="44.0" prefWidth="334.0" text="Vegetable" textFill="#ffffffbf">
+                           <font>
+                              <Font name="Times New Roman" size="22.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Text layoutX="298.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&gt;">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="60.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="meatBut" mnemonicParsing="false" onAction="#MeatOn" prefHeight="44.0" prefWidth="334.0" text="Meat">
+                           <font>
+                              <Font name="Times New Roman" size="22.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Text layoutX="298.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&gt;">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane prefWidth="200.0">
+                     <children>
+                        <Button fx:id="soupBut" mnemonicParsing="false" onAction="#SoupOn" prefHeight="44.0" prefWidth="334.0" text="Soup">
+                           <font>
+                              <Font name="Times New Roman" size="22.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Text layoutX="298.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&gt;">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane prefWidth="200.0">
+                     <children>
+                        <Button fx:id="fishBut" mnemonicParsing="false" onAction="#FishOn" prefHeight="44.0" prefWidth="334.0" text="Fish">
+                           <font>
+                              <Font name="Times New Roman" size="22.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Text layoutX="298.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&gt;">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane prefWidth="200.0">
+                     <children>
+                        <Button fx:id="holidayBut" mnemonicParsing="false" onAction="#HolidayOn" prefHeight="44.0" prefWidth="334.0" text="Holiday" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman" size="22.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Text layoutX="298.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&gt;">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane prefWidth="200.0">
+                     <children>
+                        <Button fx:id="juiceBut" mnemonicParsing="false" onAction="#JuiceOn" prefHeight="44.0" prefWidth="334.0" text="Juice">
+                           <font>
+                              <Font name="Times New Roman" size="22.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Text layoutX="298.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&gt;">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane prefWidth="200.0">
+                     <children>
+                        <Button fx:id="cakeBut" mnemonicParsing="false" onAction="#CakeOn" prefHeight="44.0" prefWidth="334.0" text="Cake">
+                           <font>
+                              <Font name="Times New Roman" size="22.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Text layoutX="298.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&gt;">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane prefWidth="200.0">
+                     <children>
+                        <Button fx:id="riceBut" mnemonicParsing="false" onAction="#RiceOn" prefHeight="44.0" prefWidth="334.0" text="Rice Gruel">
+                           <font>
+                              <Font name="Times New Roman" size="22.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Text layoutX="298.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&gt;">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <TitledPane animated="false" expanded="false" prefHeight="262.0" prefWidth="335.0" text="Các món đã chọn" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="22.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                 <font>
+                                    <Font name="Times New Roman" size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                           </children>
+                        </VBox>
+                     </content>
+                  </TitledPane>
+               </children>
+            </VBox>
+            <StackPane prefHeight="654.0" prefWidth="768.0">
+               <children>
+                  <VBox fx:id="vegetable" prefWidth="850.0" style="-fx-background-color: white;">
+                     <children>
+                        <Pane prefHeight="77.0" prefWidth="767.0" style="-fx-background-color: #f2f2f2;">
+                           <children>
+                              <TextField layoutX="14.0" layoutY="14.0" prefHeight="38.0" prefWidth="637.0" promptText="Tìm kiếm món loại Vegetable" style="-fx-background-radius: 20;">
+                                 <font>
+                                    <Font name="Times New Roman" size="18.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                              </TextField>
+                              <Button layoutX="671.0" layoutY="14.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="82.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-text-fill: black; -fx-border-color: #04AA6D; -fx-background-color: white;" text="Tìm kiếm" textFill="#f2f2f2">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                        <ScrollPane fitToWidth="true" hbarPolicy="NEVER" hmax="3.0" prefHeight="616.0" style="-fx-background-color: white;">
+                           <content>
+                              <VBox prefHeight="615.0" prefWidth="752.0" spacing="30.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <HBox prefHeight="217.0" prefWidth="740.0" spacing="80.0" stylesheets="@mon_an.css">
+                                       <children>
+                                          <Pane prefHeight="217.0" prefWidth="288.0">
+                                             <children>
+                                                <VBox id="c1" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/CatagoryView.css">
+                                                   <children>
+                                                      <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                                         <image>
+                                                            <Image url="@monan_img/c.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                                         <font>
+                                                            <Font name="Times New Roman" size="20.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets left="10.0" top="10.0" />
+                                                         </VBox.margin>
+                                                      </Text>
+                                                   </children>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </VBox>
+                                                <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                             </children>
+                                          </Pane>
+                                          <Pane prefHeight="217.0" prefWidth="288.0">
+                                             <children>
+                                                <VBox id="c1" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/CatagoryView.css">
+                                                   <children>
+                                                      <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                                         <image>
+                                                            <Image url="@monan_img/c.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                                         <font>
+                                                            <Font name="Times New Roman" size="20.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets left="10.0" top="10.0" />
+                                                         </VBox.margin>
+                                                      </Text>
+                                                   </children>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </VBox>
+                                                <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                             </children>
+                                          </Pane>
+                                          <Pane prefHeight="217.0" prefWidth="288.0">
+                                             <children>
+                                                <VBox id="c1" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/CatagoryView.css">
+                                                   <children>
+                                                      <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                                         <image>
+                                                            <Image url="@monan_img/c.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                                         <font>
+                                                            <Font name="Times New Roman" size="20.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets left="10.0" top="10.0" />
+                                                         </VBox.margin>
+                                                      </Text>
+                                                   </children>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </VBox>
+                                                <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                       <padding>
+                                          <Insets left="35.0" right="50.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox prefHeight="217.0" prefWidth="740.0" spacing="80.0" stylesheets="@mon_an.css">
+                                       <children>
+                                          <Pane prefHeight="217.0" prefWidth="288.0">
+                                             <children>
+                                                <VBox id="c1" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/CatagoryView.css">
+                                                   <children>
+                                                      <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                                         <image>
+                                                            <Image url="@monan_img/c.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                                         <font>
+                                                            <Font name="Times New Roman" size="20.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets left="10.0" top="10.0" />
+                                                         </VBox.margin>
+                                                      </Text>
+                                                   </children>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </VBox>
+                                                <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                             </children>
+                                          </Pane>
+                                          <Pane prefHeight="217.0" prefWidth="288.0">
+                                             <children>
+                                                <VBox id="c1" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/CatagoryView.css">
+                                                   <children>
+                                                      <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                                         <image>
+                                                            <Image url="@monan_img/c.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                                         <font>
+                                                            <Font name="Times New Roman" size="20.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets left="10.0" top="10.0" />
+                                                         </VBox.margin>
+                                                      </Text>
+                                                   </children>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </VBox>
+                                                <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                             </children>
+                                          </Pane>
+                                          <Pane prefHeight="217.0" prefWidth="288.0">
+                                             <children>
+                                                <VBox id="c1" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/CatagoryView.css">
+                                                   <children>
+                                                      <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                                         <image>
+                                                            <Image url="@monan_img/c.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                                         <font>
+                                                            <Font name="Times New Roman" size="20.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets left="10.0" top="10.0" />
+                                                         </VBox.margin>
+                                                      </Text>
+                                                   </children>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </VBox>
+                                                <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                       <padding>
+                                          <Insets left="35.0" right="50.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="30.0" right="10.0" top="20.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ScrollPane>
+                     </children>
+                     <StackPane.margin>
+                        <Insets />
+                     </StackPane.margin>
+                  </VBox>
+                  <VBox fx:id="meat" prefHeight="200.0" prefWidth="100.0" spacing="30.0" style="-fx-background-color: green;" visible="false">
+                     <children>
+                        <TextField prefHeight="52.0" prefWidth="850.0" promptText="Tìm kiếm món ăn">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </TextField>
+                        <HBox prefHeight="217.0" prefWidth="740.0" spacing="80.0" stylesheets="@mon_an.css">
+                           <children>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="60.0" layoutY="10.0" prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="380.0" layoutY="10.0" prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                           </children>
+                           <padding>
+                              <Insets left="50.0" right="50.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="217.0" prefWidth="740.0" spacing="80.0" stylesheets="@mon_an.css">
+                           <children>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                           </children>
+                           <padding>
+                              <Insets left="50.0" right="50.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="soup" prefHeight="200.0" prefWidth="100.0" spacing="30.0" style="-fx-background-color: yellow;" visible="false">
+                     <children>
+                        <TextField prefHeight="52.0" prefWidth="850.0" promptText="Tìm kiếm món ăn">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </TextField>
+                        <HBox prefHeight="217.0" prefWidth="740.0" spacing="80.0" stylesheets="@mon_an.css">
+                           <children>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="60.0" layoutY="10.0" prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="380.0" layoutY="10.0" prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                           </children>
+                           <padding>
+                              <Insets left="50.0" right="50.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="217.0" prefWidth="740.0" spacing="80.0" stylesheets="@mon_an.css">
+                           <children>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                           </children>
+                           <padding>
+                              <Insets left="50.0" right="50.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="fish" prefHeight="200.0" prefWidth="100.0" spacing="30.0" style="-fx-background-color: red;" visible="false">
+                     <children>
+                        <TextField prefHeight="52.0" promptText="Tìm kiếm món ăn">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </TextField>
+                        <HBox prefHeight="217.0" prefWidth="740.0" spacing="80.0" stylesheets="@mon_an.css">
+                           <children>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="60.0" layoutY="10.0" prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="380.0" layoutY="10.0" prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                           </children>
+                           <padding>
+                              <Insets left="50.0" right="50.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="217.0" prefWidth="740.0" spacing="80.0" stylesheets="@mon_an.css">
+                           <children>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                           </children>
+                           <padding>
+                              <Insets left="50.0" right="50.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="holiday" prefHeight="200.0" prefWidth="100.0" spacing="30.0" style="-fx-background-color: black;" visible="false">
+                     <children>
+                        <TextField prefHeight="52.0" promptText="Tìm kiếm món ăn">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </TextField>
+                        <HBox prefHeight="217.0" prefWidth="740.0" spacing="80.0" stylesheets="@mon_an.css">
+                           <children>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="60.0" layoutY="10.0" prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="380.0" layoutY="10.0" prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                           </children>
+                           <padding>
+                              <Insets left="50.0" right="50.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="217.0" prefWidth="740.0" spacing="80.0" stylesheets="@mon_an.css">
+                           <children>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                           </children>
+                           <padding>
+                              <Insets left="50.0" right="50.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="juice" prefHeight="200.0" prefWidth="100.0" spacing="30.0" style="-fx-background-color: white;" visible="false">
+                     <children>
+                        <TextField prefHeight="52.0" promptText="Tìm kiếm món ăn">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </TextField>
+                        <HBox prefHeight="217.0" prefWidth="740.0" spacing="80.0" stylesheets="@mon_an.css">
+                           <children>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="60.0" layoutY="10.0" prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="380.0" layoutY="10.0" prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                           </children>
+                           <padding>
+                              <Insets left="50.0" right="50.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="217.0" prefWidth="740.0" spacing="80.0" stylesheets="@mon_an.css">
+                           <children>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                           </children>
+                           <padding>
+                              <Insets left="50.0" right="50.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="cake" prefHeight="200.0" prefWidth="100.0" spacing="30.0" style="-fx-background-color: lightgreen;" visible="false">
+                     <children>
+                        <TextField prefHeight="52.0" promptText="Tìm kiếm món ăn">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </TextField>
+                        <HBox prefHeight="217.0" prefWidth="740.0" spacing="80.0" stylesheets="@mon_an.css">
+                           <children>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="60.0" layoutY="10.0" prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="380.0" layoutY="10.0" prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                           </children>
+                           <padding>
+                              <Insets left="50.0" right="50.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="217.0" prefWidth="740.0" spacing="80.0" stylesheets="@mon_an.css">
+                           <children>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                           </children>
+                           <padding>
+                              <Insets left="50.0" right="50.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="rice" prefHeight="200.0" prefWidth="100.0" spacing="30.0" style="-fx-background-color: lightblue;" visible="false">
+                     <children>
+                        <TextField prefHeight="52.0" promptText="Tìm kiếm món ăn">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </TextField>
+                        <HBox prefHeight="217.0" prefWidth="740.0" spacing="80.0" stylesheets="@mon_an.css">
+                           <children>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="60.0" layoutY="10.0" prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="380.0" layoutY="10.0" prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                           </children>
+                           <padding>
+                              <Insets left="50.0" right="50.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="217.0" prefWidth="740.0" spacing="80.0" stylesheets="@mon_an.css">
+                           <children>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="218.0" prefWidth="239.0">
+                                 <children>
+                                    <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@monan_img/c.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vegetable1" wrappingWidth="181.13671875">
+                                             <font>
+                                                <Font name="Times New Roman" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </VBox>
+                                    <CheckBox layoutX="91.0" layoutY="209.0" mnemonicParsing="false" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                           </children>
+                           <padding>
+                              <Insets left="50.0" right="50.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </StackPane>
+         </children>
+      </HBox>
+      <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="58.0" prefWidth="1094.0" style="-fx-background-color: #f2f2f2;">
+        <items>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="82.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: #04AA6D; -fx-text-fill: black; -fx-border-color: #04AA6D;" text="Tạo" textFill="#f2f2f2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="559.0" promptText="Nhập tên thực đơn" style="-fx-background-radius: 10;">
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </TextField>
+        </items>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </ToolBar>
+   </children>
+</VBox>

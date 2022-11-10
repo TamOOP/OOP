@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="858.0" prefWidth="1104.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookingNotebook.controllers.MenuViewController">
+   <children>
+      <Pane prefHeight="71.0" prefWidth="1104.0" style="-fx-background-color: #f2f2f2;">
+         <children>
+            <Button layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#goBack" prefHeight="38.0" prefWidth="82.0" style="-fx-border-radius: 20; -fx-background-color: white; -fx-background-radius: 20; -fx-text-fill: black; -fx-border-color: #04AA6D;" text="&lt; Back">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="836.0" layoutY="17.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="229.0" style="-fx-border-radius: 20; -fx-background-color: white; -fx-background-radius: 20; -fx-text-fill: black; -fx-border-color: #04AA6D;" text="Tạo mới tự động">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="552.0" layoutY="17.0" mnemonicParsing="false" onAction="#TaoThuCong" prefHeight="38.0" prefWidth="229.0" style="-fx-border-radius: 20; -fx-background-color: white; -fx-background-radius: 20; -fx-text-fill: black; -fx-border-color: #04AA6D;" text="Tạo mới thủ công">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Pane prefHeight="84.0" prefWidth="1104.0">
+         <children>
+            <Label layoutX="432.0" layoutY="28.0" text="THỰC ĐƠN HIỆN CÓ">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Line endX="1607.4644775390625" endY="1132.3428955078125" startX="504.1716003417969" startY="1135.1715087890625" stroke="#f8bc15" />
+      <Pane prefHeight="633.0" prefWidth="1104.0">
+         <children>
+            <VBox prefHeight="633.0" prefWidth="1105.0" />
+            <Label layoutX="473.0" layoutY="307.0" text="Chưa có thực đơn nào" textFill="#a3a8af99">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</VBox>
