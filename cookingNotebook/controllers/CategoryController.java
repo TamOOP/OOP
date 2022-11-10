@@ -36,14 +36,14 @@ public class CategoryController {
 	}
         
         public void goFoodView(MouseEvent e) throws IOException{
-            FXMLLoader foodview = new FXMLLoader();
-            foodview.setLocation(getClass().getResource("/resource/fxml/FoodView.fxml"));
-            Parent FoodView = foodview.load();
-            Scene scene = new Scene(FoodView);
-            AddFoodViewController controller = foodview.getController();
-            controller.loaiMon.setText(topLabel.getText());
-            Stage stage = (Stage)((Node) e.getSource()).getScene().getWindow();
-           stage.setScene(scene);
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/resource/fxml/FoodView.fxml"));
+            Parent addFoodView = loader.load();
+            Scene scene = new Scene(addFoodView);
+            FoodViewController controller = loader.getController();
+            controller.loai.setVisible(true);
+            controller.menu.setVisible(false);
+            Stage stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+            stage.setScene(scene); 
         }
          
 }

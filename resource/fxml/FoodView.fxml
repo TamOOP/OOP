@@ -9,12 +9,13 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<VBox prefWidth="1146.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookingNotebook.controllers.AddFoodViewController">
+<VBox prefHeight="725.0" prefWidth="1094.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookingNotebook.controllers.FoodViewController">
    <children>
       <Pane prefHeight="61.0" prefWidth="1146.0" style="-fx-background-color: white;">
          <children>
@@ -23,20 +24,40 @@
                   <Font name="Times New Roman Bold" size="40.0" />
                </font>
             </Text>
-            <Button layoutX="26.0" layoutY="9.0" mnemonicParsing="false" onAction="#goBackLoaiMon" prefHeight="44.0" prefWidth="112.0" style="-fx-background-color: white; -fx-border-color: #c98b1f; -fx-border-radius: 20; -fx-background-radius: 20;" text="&lt;  Back" textFill="#c6853a">
+            <Label fx:id="loaiMon" layoutX="187.0" layoutY="22.0" text="Label" visible="false" />
+            <StackPane layoutX="21.0" layoutY="9.0" prefHeight="44.0" prefWidth="91.0">
+               <children>
+                  <Button fx:id="loai" mnemonicParsing="false" onAction="#goBackLoaiMon" prefHeight="44.0" prefWidth="91.0" style="-fx-background-color: white; -fx-border-color: #c98b1f; -fx-border-radius: 20; -fx-background-radius: 20;" text="&lt;  Back" textFill="#c6853a">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="menu" mnemonicParsing="false" onAction="#goBackMenuInfo" prefHeight="44.0" prefWidth="91.0" style="-fx-background-color: white; -fx-border-color: #c98b1f; -fx-border-radius: 20; -fx-background-radius: 20;" text="&lt;  Back" textFill="#c6853a">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </StackPane>
+            <Button layoutX="989.0" layoutY="9.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="91.0" style="-fx-background-color: red; -fx-border-color: #c98b1f; -fx-border-radius: 20; -fx-background-radius: 20;" text="Xóa" textFill="WHITE" fx:id="xoa">
                <font>
-                  <Font name="System Bold" size="18.0" />
+                  <Font name="System Bold" size="16.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Label fx:id="loaiMon" layoutX="187.0" layoutY="22.0" text="Label" visible="false" />
          </children>
       </Pane>
-      <ScrollPane hbarPolicy="NEVER" vmax="3.0">
+      <ScrollPane hbarPolicy="NEVER" prefHeight="664.0" prefWidth="1094.0" vmax="3.0">
          <content>
-            <VBox id="monan" prefHeight="940.0" prefWidth="1144.0">
+            <VBox id="monan" prefHeight="1177.0" prefWidth="1144.0">
                <children>
                   <ImageView fitHeight="269.0" fitWidth="400.0" pickOnBounds="true">
                      <image>
@@ -156,7 +177,7 @@
                         <Insets top="30.0" />
                      </VBox.margin>
                   </Text>
-                  <TextFlow lineSpacing="50.0" prefHeight="373.0" prefWidth="795.0">
+                  <TextFlow lineSpacing="50.0" prefHeight="1434.0" prefWidth="924.0">
                      <children>
                         <VBox alignment="TOP_CENTER" prefHeight="364.0" prefWidth="945.0">
                            <children>
@@ -252,7 +273,7 @@
                   </TextFlow>
                </children>
                <padding>
-                  <Insets left="100.0" right="100.0" />
+                  <Insets left="100.0" right="120.0" />
                </padding>
             </VBox>
          </content>

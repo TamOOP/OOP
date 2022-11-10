@@ -14,23 +14,23 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox fx:id="categoryView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1146.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookingNotebook.controllers.CategoryController">
+<VBox fx:id="categoryView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="1094.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookingNotebook.controllers.CategoryController">
    <children>
-      <Pane prefHeight="99.0" prefWidth="1146.0">
+      <Pane prefHeight="102.0" prefWidth="1094.0">
          <children>
             <Label id="topLabel" fx:id="topLabel" alignment="CENTER" layoutX="441.0" layoutY="7.0" prefHeight="61.0" prefWidth="264.0" text="A" textAlignment="CENTER" />
          </children>
       </Pane>
       <ScrollPane hbarPolicy="NEVER" vmax="3.0">
          <content>
-            <VBox prefHeight="793.0" prefWidth="1146.0" spacing="50.0">
+            <VBox prefHeight="570.0" prefWidth="1092.0" spacing="50.0">
                <children>
                   <HBox prefHeight="217.0" prefWidth="740.0" spacing="100.0">
                      <VBox.margin>
                         <Insets />
                      </VBox.margin>
                      <children>
-                        <VBox id="c1" onMouseClicked="#goFoodView" prefHeight="200.0" prefWidth="200.0">
+                        <VBox id="c1" onMouseClicked="#goFoodView" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/MainView.css">
                            <children>
                               <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
                                  <image>
@@ -38,6 +38,34 @@
                                  </image>
                               </ImageView>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ốc hương xào tỏi" wrappingWidth="181.13671875">
+                                 <font>
+                                    <Font name="Times New Roman" size="21.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fill="#6b6b6b" strokeType="OUTSIDE" strokeWidth="0.0" text="Thời gian nấu: " wrappingWidth="139.13671875">
+                                 <font>
+                                    <Font name="Times New Roman" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="10.0" top="5.0" />
+                                 </VBox.margin>
+                              </Text>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </VBox>
+                        <VBox id="c1" onMouseClicked="#goFoodView" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/MainView.css">
+                           <children>
+                              <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../imgs/logo.png" />
+                                 </image>
+                              </ImageView>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NaN" wrappingWidth="181.13671875">
                                  <font>
                                     <Font name="Times New Roman" size="20.0" />
                                  </font>
@@ -50,98 +78,14 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </VBox>
-                        <VBox id="c1" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                        <VBox id="c1" onMouseClicked="#goFoodView" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/MainView.css">
                            <children>
                               <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@monan_img/c.png" />
+                                    <Image url="@../imgs/logo.png" />
                                  </image>
                               </ImageView>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ốc hương xào tỏi" wrappingWidth="181.13671875">
-                                 <font>
-                                    <Font name="Times New Roman" size="20.0" />
-                                 </font>
-                                 <VBox.margin>
-                                    <Insets left="10.0" top="10.0" />
-                                 </VBox.margin>
-                              </Text>
-                           </children>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </VBox>
-                        <VBox id="c1" layoutX="210.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
-                           <children>
-                              <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
-                                 <image>
-                                    <Image url="@monan_img/c.png" />
-                                 </image>
-                              </ImageView>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ốc hương xào tỏi" wrappingWidth="181.13671875">
-                                 <font>
-                                    <Font name="Times New Roman" size="20.0" />
-                                 </font>
-                                 <VBox.margin>
-                                    <Insets left="10.0" top="10.0" />
-                                 </VBox.margin>
-                              </Text>
-                           </children>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </VBox>
-                     </children>
-                  </HBox>
-                  <HBox layoutX="10.0" layoutY="287.0" prefHeight="217.0" prefWidth="740.0" spacing="100.0">
-                     <children>
-                        <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
-                           <children>
-                              <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
-                                 <image>
-                                    <Image url="@monan_img/c.png" />
-                                 </image>
-                              </ImageView>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ốc hương xào tỏi" wrappingWidth="181.13671875">
-                                 <font>
-                                    <Font name="Times New Roman" size="20.0" />
-                                 </font>
-                                 <VBox.margin>
-                                    <Insets left="10.0" top="10.0" />
-                                 </VBox.margin>
-                              </Text>
-                           </children>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </VBox>
-                        <VBox id="c1" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
-                           <children>
-                              <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
-                                 <image>
-                                    <Image url="@monan_img/c.png" />
-                                 </image>
-                              </ImageView>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ốc hương xào tỏi" wrappingWidth="181.13671875">
-                                 <font>
-                                    <Font name="Times New Roman" size="20.0" />
-                                 </font>
-                                 <VBox.margin>
-                                    <Insets left="10.0" top="10.0" />
-                                 </VBox.margin>
-                              </Text>
-                           </children>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </VBox>
-                        <VBox id="c1" layoutX="210.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
-                           <children>
-                              <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
-                                 <image>
-                                    <Image url="@monan_img/c.png" />
-                                 </image>
-                              </ImageView>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ốc hương xào tỏi" wrappingWidth="181.13671875">
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NaN" wrappingWidth="181.13671875">
                                  <font>
                                     <Font name="Times New Roman" size="20.0" />
                                  </font>
@@ -155,84 +99,14 @@
                            </cursor>
                         </VBox>
                      </children>
-                     <VBox.margin>
-                        <Insets />
-                     </VBox.margin>
-                  </HBox>
-                  <HBox layoutX="10.0" layoutY="504.0" prefHeight="217.0" prefWidth="740.0" spacing="100.0">
-                     <children>
-                        <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
-                           <children>
-                              <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
-                                 <image>
-                                    <Image url="@monan_img/c.png" />
-                                 </image>
-                              </ImageView>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ốc hương xào tỏi" wrappingWidth="181.13671875">
-                                 <font>
-                                    <Font name="Times New Roman" size="20.0" />
-                                 </font>
-                                 <VBox.margin>
-                                    <Insets left="10.0" top="10.0" />
-                                 </VBox.margin>
-                              </Text>
-                           </children>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </VBox>
-                        <VBox id="c1" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
-                           <children>
-                              <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
-                                 <image>
-                                    <Image url="@monan_img/c.png" />
-                                 </image>
-                              </ImageView>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ốc hương xào tỏi" wrappingWidth="181.13671875">
-                                 <font>
-                                    <Font name="Times New Roman" size="20.0" />
-                                 </font>
-                                 <VBox.margin>
-                                    <Insets left="10.0" top="10.0" />
-                                 </VBox.margin>
-                              </Text>
-                           </children>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </VBox>
-                        <VBox id="c1" layoutX="210.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
-                           <children>
-                              <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
-                                 <image>
-                                    <Image url="@monan_img/c.png" />
-                                 </image>
-                              </ImageView>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ốc hương xào tỏi" wrappingWidth="181.13671875">
-                                 <font>
-                                    <Font name="Times New Roman" size="20.0" />
-                                 </font>
-                                 <VBox.margin>
-                                    <Insets left="10.0" top="10.0" />
-                                 </VBox.margin>
-                              </Text>
-                           </children>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </VBox>
-                     </children>
-                     <VBox.margin>
-                        <Insets />
-                     </VBox.margin>
                   </HBox>
                   <HBox prefHeight="217.0" prefWidth="740.0" spacing="100.0">
                      <children>
-                        <VBox id="c1" prefHeight="200.0" prefWidth="200.0">
+                        <VBox id="c1" onMouseClicked="#goFoodView" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/MainView.css">
                            <children>
                               <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@monan_img/c.png" />
+                                    <Image url="@../imgs/logo.png" />
                                  </image>
                               </ImageView>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ốc hương xào tỏi" wrappingWidth="181.13671875">
@@ -248,14 +122,14 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </VBox>
-                        <VBox id="c1" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                        <VBox id="c1" onMouseClicked="#goFoodView" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/MainView.css">
                            <children>
                               <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@monan_img/c.png" />
+                                    <Image url="@../imgs/logo.png" />
                                  </image>
                               </ImageView>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ốc hương xào tỏi" wrappingWidth="181.13671875">
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NaN" wrappingWidth="181.13671875">
                                  <font>
                                     <Font name="Times New Roman" size="20.0" />
                                  </font>
@@ -268,14 +142,14 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </VBox>
-                        <VBox id="c1" layoutX="210.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                        <VBox id="c1" onMouseClicked="#goFoodView" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/MainView.css">
                            <children>
                               <ImageView fitHeight="172.0" fitWidth="200.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@monan_img/c.png" />
+                                    <Image url="@../imgs/logo.png" />
                                  </image>
                               </ImageView>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ốc hương xào tỏi" wrappingWidth="181.13671875">
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NaN" wrappingWidth="181.13671875">
                                  <font>
                                     <Font name="Times New Roman" size="20.0" />
                                  </font>
@@ -292,22 +166,28 @@
                   </HBox>
                </children>
                <padding>
-                  <Insets bottom="30.0" left="170.0" top="30.0" />
+                  <Insets bottom="30.0" left="150.0" top="30.0" />
                </padding>
             </VBox>
          </content>
       </ScrollPane>
-      <HBox alignment="TOP_RIGHT" prefHeight="78.0" prefWidth="800.0" spacing="40.0" VBox.vgrow="NEVER">
+      <HBox alignment="TOP_RIGHT" prefHeight="64.0" prefWidth="1094.0" spacing="40.0" VBox.vgrow="NEVER">
          <children>
             <Button mnemonicParsing="false" onAction="#goBack" prefHeight="40.0" prefWidth="120.0" text="Back" textAlignment="CENTER">
                <HBox.margin>
                   <Insets top="7.0" />
                </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
             <Button fx:id="addFood" mnemonicParsing="false" onAction="#goAddFoodView" prefHeight="40.0" prefWidth="120.0" text="AddFood" textAlignment="CENTER">
                <HBox.margin>
                   <Insets top="7.0" />
                </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
          </children>
          <padding>

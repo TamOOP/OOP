@@ -1,16 +1,3 @@
-#topLabel {
-	-fx-font-size: 50px;
-}
-Button {
-	-fx-text-fill: #fffcdc;
-	-fx-font-size: 20px;
-	-fx-background-color: #23074d;
-	-fx-background-radius: 20px;
-}
-Button:hover {
-	-fx-background-color: #d9a7c7;
-	-fx-text-fill: #23074d;
-}
 #vegetable {
 	-fx-background-image: url(../imgs/vegetable.jpg);
 	-fx-background-size: 100% 100%;
@@ -43,13 +30,8 @@ Button:hover {
 	-fx-background-image: url(../imgs/rice-gruel.jpg);
 	-fx-background-size: 100% 100%;
 }
-Label {
-	-fx-font-size: 20px;
-	-fx-text-fill: #fffde4;
-	-fx-opacity: 0.7;
-}
-Label:hover {
-	-fx-text-fill: #ffffff;
-	-fx-effect: dropshadow(gaussian, #23074d, 50, 0.3, 10, 10);
-	-fx-opacity: 1;
+#c1{
+    -fx-border: solid;
+    -fx-background-color:white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
 }

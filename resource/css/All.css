@@ -1,3 +1,13 @@
 .root {
-    -fx-background-color: linear-gradient(to top, #fffcdc, #d9a7c7, #23074d);
+    -fx-background-color: #fffcdc;
+}
+Button {
+	-fx-text-fill: #fffcdc;
+	-fx-font-size: 20px;
+	-fx-background-color: #23074d;
+	-fx-background-radius: 20px;
+}
+Button:hover {
+	-fx-background-color: #ffffff;
+	-fx-text-fill: #23074d;
 }
