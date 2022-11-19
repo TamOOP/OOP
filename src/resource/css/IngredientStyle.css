@@ -1,0 +1,10 @@
+
+Label{
+    
+    -fx-content-display:right;
+    
+}
+TextField{
+    -fx-font-size:12;
+}
+
