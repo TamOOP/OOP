@@ -1,0 +1,37 @@
+#vegetable {
+	-fx-background-image: url(../imgs/vegetable.jpg);
+	-fx-background-size: 100% 100%;
+}
+#cake {
+	-fx-background-image: url(../imgs/cake.jpg);
+	-fx-background-size: 100% 100%;
+}
+#fish {
+	-fx-background-image: url(../imgs/fish.jpg);
+	-fx-background-size: 100% 100%;
+}
+#holiday {
+	-fx-background-image: url(../imgs/holiday.jpg);
+	-fx-background-size: 100% 100%;
+}
+#meat {
+	-fx-background-image: url(../imgs/meat.jpg);
+	-fx-background-size: 100% 100%;
+}
+#soup {
+	-fx-background-image: url(../imgs/soup.jpg);
+	-fx-background-size: 100% 100%;
+}
+#juice {
+	-fx-background-image: url(../imgs/juice.jpg);
+	-fx-background-size: 100% 100%;
+}
+#riceGruel {
+	-fx-background-image: url(../imgs/rice-gruel.jpg);
+	-fx-background-size: 100% 100%;
+}
+#c1{
+    -fx-border: solid;
+    -fx-background-color:white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}

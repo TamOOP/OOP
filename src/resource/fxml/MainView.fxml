@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="725.0" prefWidth="1094.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookingNotebook.controllers.MainViewController">
+   <children>
+      <TilePane alignment="CENTER" prefHeight="175.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label id="topLabel" alignment="CENTER" text="Category" textAlignment="CENTER">
+               <font>
+                  <Font size="48.0" />
+               </font></Label>
+         </children>
+      </TilePane>
+      <TilePane alignment="CENTER" prefHeight="311.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label id="vegetable" fx:id="vegetable" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#goCategoryView" prefHeight="90.0" prefWidth="160.0" style="-fx-font-size: 20; -fx-text-fill: white;" text="Vegetable" textFill="WHITE">
+               <TilePane.margin>
+                  <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+               </TilePane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label id="meat" fx:id="meat" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#goCategoryView" prefHeight="90.0" prefWidth="160.0" style="-fx-font-size: 20; -fx-text-fill: white;" text="Meat" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Label>
+            <Label id="soup" fx:id="soup" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#goCategoryView" prefHeight="90.0" prefWidth="160.0" style="-fx-font-size: 20; -fx-text-fill: white;" text="Soup" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Label>
+            <Label id="fish" fx:id="fish" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#goCategoryView" prefHeight="90.0" prefWidth="160.0" style="-fx-font-size: 20; -fx-text-fill: white;" text="Fish" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Label>
+            <Label id="holiday" fx:id="holiday" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#goCategoryView" prefHeight="90.0" prefWidth="160.0" style="-fx-font-size: 20; -fx-text-fill: white;" text="Holiday" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Label>
+            <Label id="juice" fx:id="juice" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#goCategoryView" prefHeight="90.0" prefWidth="160.0" style="-fx-font-size: 20; -fx-text-fill: white;" text="Juice" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Label>
+            <Label id="cake" fx:id="cake" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#goCategoryView" prefHeight="90.0" prefWidth="160.0" style="-fx-font-size: 20; -fx-text-fill: white;" text="Cake" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Label>
+            <Label id="riceGruel" fx:id="riceGruel" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#goCategoryView" prefHeight="90.0" prefWidth="160.0" style="-fx-font-size: 20; -fx-text-fill: white;" text="Rice Gruel" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Label>
+         </children>
+      </TilePane>
+      <TilePane alignment="TOP_RIGHT" prefHeight="78.0" prefWidth="800.0" VBox.vgrow="NEVER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#goMenu" prefHeight="40.0" prefWidth="103.0" text="Menu" textAlignment="CENTER">
+               <TilePane.margin>
+                  <Insets right="40.0" />
+               </TilePane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </TilePane>
+   </children>
+   <stylesheets>
+      <URL value="@../css/All.css" />
+      <URL value="@../css/MainView.css" />
+   </stylesheets>
+</VBox>
