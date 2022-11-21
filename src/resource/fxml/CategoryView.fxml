@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="categoryView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="1094.0" stylesheets="@../css/CatagoryView.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookingNotebook.controllers.CategoryController">
+   <children>
+      <Pane prefHeight="102.0" prefWidth="1094.0" style="-fx-background-image: url('./resource/imgs/13.jpg');">
+         <children>
+            <Label id="topLabel" fx:id="topLabel" alignment="CENTER" layoutX="268.0" layoutY="20.0" prefHeight="61.0" prefWidth="558.0" text="A" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman Bold" size="50.0" />
+               </font></Label>
+            <Button layoutX="14.0" layoutY="22.0" mnemonicParsing="false" onAction="#goBack" prefHeight="40.0" prefWidth="120.0" text="Back" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="960.0" layoutY="29.0" mnemonicParsing="false" onAction="#goAddFoodView" prefHeight="40.0" prefWidth="120.0" text="AddFood" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <ScrollPane hbarPolicy="NEVER" prefHeight="624.0" prefWidth="1038.0" style="-fx-background-image: url('./resource/imgs/h.jpg');">
+         <content>
+            <TilePane fx:id="foodsView" hgap="60.0" prefHeight="622.0" prefWidth="1095.0" style="-fx-background-color: white;" vgap="60.0">
+               <padding>
+                  <Insets left="50.0" right="50.0" top="30.0" />
+               </padding>
+            </TilePane>
+         </content>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </ScrollPane>
+   </children>
+</VBox>
