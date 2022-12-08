@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="MenuView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="1094.0" style="-fx-background-color: white;" stylesheets="@../css/MenuView.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookingNotebook.controllers.MenuViewController">
+   <children>
+      <Pane prefHeight="70.0" prefWidth="1094.0" style="-fx-background-color: white;">
+         <children>
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" prefHeight="38.0" prefWidth="82.0" style="-fx-border-radius: 20; -fx-background-color: #04AA6D; -fx-background-radius: 20; -fx-text-fill: white;" text="&lt; Back">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font></Button>
+            <Label layoutX="427.0" layoutY="19.0" text="DANH SÁCH THỰC ĐƠN">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane prefHeight="653.0" prefWidth="1094.0" style="-fx-background-color: #f0f1f1;">
+         <children>
+            <Pane fx:id="head" layoutX="101.0" layoutY="24.0" prefHeight="59.0" prefWidth="915.0" style="-fx-background-color: white;">
+               <children>
+                  <Pane layoutX="701.0" layoutY="11.0" onMouseClicked="#showOption" prefHeight="38.0" prefWidth="200.0" style="-fx-background-color: rgb(0, 136, 255);">
+                     <children>
+                        <Text fill="WHITE" layoutX="40.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thêm thực đơn">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="14.0" text="+" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Line endX="184.0" endY="16.0" startX="178.0" startY="23.0" stroke="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </Line>
+                        <Line endX="18.79998779296875" endY="8.999961853027344" layoutX="159.0" layoutY="14.0" startX="11.79998779296875" startY="1.9" stroke="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </Line>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+               </children>
+            </Pane>
+            <TilePane fx:id="MenuList" layoutY="82.0" prefHeight="573.0" prefWidth="1094.0">
+               <children>
+                  <Pane prefHeight="46.0" prefWidth="915.0" style="-fx-background-color: #F4F6F8; -fx-border-color: rgba(224, 224, 224, 1);">
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin>
+                     <children>
+                        <Text layoutX="109.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tên thực đơn">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="544.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loại">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="alert" prefHeight="46.0" prefWidth="915.0" style="-fx-background-color: white; -fx-border-color: rgba(224, 224, 224, 1);" visible="false">
+                     <children>
+                        <Label layoutX="378.0" layoutY="13.0" text="Chưa có thực đơn nào" textFill="#00000099">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+            </TilePane>
+         </children>
+      </Pane>
+   </children>
+</VBox>

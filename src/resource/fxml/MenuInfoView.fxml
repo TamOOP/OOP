@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="MenuInfo" prefHeight="725.0" prefWidth="1094.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookingNotebook.controllers.MenuInfoViewController">
+   <children>
+      <Pane minHeight="33.0" prefHeight="65.0" prefWidth="1094.0" style="-fx-background-color: #0c3b86;">
+         <children>
+            <Button contentDisplay="RIGHT" layoutX="768.0" layoutY="14.0" mnemonicParsing="false" onAction="#SuaThucDon" prefHeight="35.0" prefWidth="128.0" style="-fx-background-color: orange; -fx-background-radius: 10;" text="Chỉnh sửa" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="939.0" layoutY="15.0" mnemonicParsing="false" onAction="#DeleteMenu" prefHeight="34.0" prefWidth="128.0" style="-fx-background-color: red; -fx-text-fill: white; -fx-background-radius: 10;" text="Xóa thực đơn">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#goBack" prefHeight="40.0" prefWidth="87.0" style="-fx-background-color: green; -fx-text-fill: white; -fx-background-radius: 10;" text="&lt; Back" textFill="#d30000">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children></Pane>
+      <VBox prefHeight="618.0" prefWidth="1094.0" style="-fx-background-color: #f0f0f0;">
+         <children>
+            <Label fx:id="m_name" alignment="TOP_CENTER" prefHeight="40.0" prefWidth="672.0" text="Món ngày Tết" textFill="#0c3b86">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="36.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="200.0" />
+               </VBox.margin>
+            </Label>
+            <ScrollPane fitToHeight="true" hbarPolicy="NEVER" style="-fx-border-color: #f0f0f0; -fx-background-color: #f0f0f0;">
+               <content>
+                  <TilePane prefHeight="544.0" prefWidth="1094.0" style="-fx-background-color: #f0f0f0;">
+                     <children>
+                        <FlowPane fx:id="foodList" prefHeight="520.0" prefWidth="614.0" style="-fx-border-color: orange; -fx-border-radius: 30; -fx-background-color: white; -fx-background-radius: 30;" vgap="15.0">
+                           <TilePane.margin>
+                              <Insets left="200.0" />
+                           </TilePane.margin>
+                        </FlowPane>
+                     </children>
+                  </TilePane>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <Pane minHeight="0.0" prefHeight="47.0" prefWidth="1120.0" style="-fx-background-color: #0c3b86;" />
+   </children>
+</VBox>
