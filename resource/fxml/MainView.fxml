@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="mainView" alignment="CENTER" prefHeight="725.0" prefWidth="1094.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookingNotebook.controllers.MainViewController">
+   <children>
+      <TilePane prefHeight="120.0" prefWidth="1094.0" tileAlignment="TOP_LEFT" VBox.vgrow="ALWAYS">
+         <children>
+            <Pane prefHeight="117.0" prefWidth="1094.0" style="-fx-background-color: #edeef1;">
+               <children>
+                  <Text fill="#768591" layoutX="375.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loại món ăn">
+                     <font>
+                        <Font name="Times New Roman Bold" size="64.0" />
+                     </font>
+                  </Text>
+                  <Line endX="986.4000244140625" endY="-1.5258789289873675E-6" layoutX="108.0" startX="-108.00001525878906" startY="-1.5258789289873675E-6" />
+                  <Line endX="186.4000244140625" endY="-0.40000152587890625" layoutX="908.0" layoutY="118.0" startX="-908.0" startY="-0.40000152587890625" stroke="#768591" />
+               </children>
+            </Pane>
+         </children>
+      </TilePane>
+      <Pane prefHeight="110.0" prefWidth="1094.0">
+         <children>
+            <Button layoutX="936.0" layoutY="25.0" mnemonicParsing="false" onAction="#goMenu" prefHeight="43.0" prefWidth="132.0" text="Thực đơn" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane prefHeight="553.0" prefWidth="1094.0">
+         <children>
+            <TilePane fx:id="categorysView" alignment="CENTER" hgap="20.0" layoutY="40.0" prefHeight="404.0" prefWidth="1094.0" style="-fx-background-color: white;" vgap="50.0">
+               <children>
+                  <Pane prefHeight="158.0" prefWidth="252.0">
+                     <children>
+                        <ImageView fitHeight="116.0" fitWidth="252.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../imgs/avatar1589277055889-1589277056634425466527.png" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutY="115.0" prefHeight="43.0" prefWidth="252.0" style="-fx-background-color: #007ee3;">
+                           <children>
+                              <Text fill="WHITE" layoutX="60.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MÓN ĂN SÁNG">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane prefHeight="158.0" prefWidth="252.0">
+                     <children>
+                        <ImageView fitHeight="116.0" fitWidth="252.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../imgs/mon-an-chinh.jpg" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutY="115.0" prefHeight="43.0" prefWidth="252.0" style="-fx-background-color: #007ee3;">
+                           <children>
+                              <Text fill="WHITE" layoutX="72.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MÓN CHÍNH">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane prefHeight="158.0" prefWidth="252.0">
+                     <children>
+                        <ImageView fitHeight="116.0" fitWidth="252.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../imgs/original.jpg" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutY="115.0" prefHeight="43.0" prefWidth="252.0" style="-fx-background-color: #007ee3;">
+                           <children>
+                              <Text fill="WHITE" layoutX="82.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MÓN PHỤ">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane prefHeight="158.0" prefWidth="252.0">
+                     <children>
+                        <ImageView fitHeight="116.0" fitWidth="252.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../imgs/th.jpg" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutY="115.0" prefHeight="43.0" prefWidth="252.0" style="-fx-background-color: #007ee3;">
+                           <children>
+                              <Text fill="WHITE" layoutX="82.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MÓN RAU">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane prefHeight="158.0" prefWidth="252.0">
+                     <children>
+                        <ImageView fitHeight="116.0" fitWidth="252.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../imgs/th1.jpg" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutY="115.0" prefHeight="43.0" prefWidth="252.0" style="-fx-background-color: #007ee3;">
+                           <children>
+                              <Text fill="WHITE" layoutX="75.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MÓN CANH">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane prefHeight="158.0" prefWidth="252.0">
+                     <children>
+                        <ImageView fitHeight="116.0" fitWidth="252.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../imgs/photo%20(1).jpg" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutY="115.0" prefHeight="43.0" prefWidth="252.0" style="-fx-background-color: #007ee3;">
+                           <children>
+                              <Text fill="WHITE" layoutX="66.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MÓN ĂN KÈM">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane prefHeight="158.0" prefWidth="252.0">
+                     <children>
+                        <ImageView fitHeight="116.0" fitWidth="252.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../imgs/mi-xao-2.jpg" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutY="115.0" prefHeight="43.0" prefWidth="252.0" style="-fx-background-color: #007ee3;">
+                           <children>
+                              <Text fill="WHITE" layoutX="60.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MÓN ĂN ĐÊM">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane prefHeight="158.0" prefWidth="252.0">
+                     <children>
+                        <ImageView fitHeight="116.0" fitWidth="252.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../imgs/luot-qua-nhung-mon-an-vat-de-lam-cho-ngay-cuoi-tuan-them-am-ap-4be932.jpg" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutY="115.0" prefHeight="43.0" prefWidth="252.0" style="-fx-background-color: #007ee3;">
+                           <children>
+                              <Text fill="WHITE" layoutX="60.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MÓN ĂN VẶT">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+               </children>
+            </TilePane>
+         </children>
+      </Pane>
+   </children>
+   <stylesheets>
+      <URL value="@../css/Food.css" />
+      <URL value="@../css/All.css" />
+   </stylesheets>
+</VBox>

@@ -1,0 +1,47 @@
+#c1{
+    -fx-background-color:white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+ScrollPane TilePane Pane VBox Pane Text{
+    -fx-font-family:  "Times New Roman";
+    -fx-font-size: 18;
+    -fx-fill:#6b6b6b;
+}
+ScrollPane TilePane Pane VBox Pane Label{
+    -fx-font-family:  "Times New Roman";
+    -fx-font-size: 18;
+    -fx-text-fill:#6b6b6b;
+}
+.titled-pane > .title {
+    -fx-background-color:#ff7cd3;
+}
+.scroll-pane {
+    -fx-background-color: black;
+    width: 10px;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-pref-width: 15px;
+    -fx-cursor:hand;
+}
+
+
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: white;
+    -fx-background-radius: 5em;
+    -fx-cursor: hand;
+    
+}
+.scroll-pane .viewport {  
+   -fx-background-color:  #434343;
+}
+    

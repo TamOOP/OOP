@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AutoMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseMoved="#checkName1" prefHeight="725.0" prefWidth="1094.0" style="-fx-background-color: #f0f1f1;" stylesheets="@../css/AutoMenu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookingNotebook.controllers.CreateMenuViewAutoController">
+   <children>
+      <Pane prefHeight="70.0" prefWidth="1094.0" style="-fx-background-color: white;">
+         <children>
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" prefHeight="38.0" prefWidth="82.0" style="-fx-border-radius: 20; -fx-background-color: #04AA6D; -fx-background-radius: 20; -fx-text-fill: white;" text="&lt; Back">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="427.0" layoutY="19.0" text="TẠO THỰC ĐƠN TỰ ĐỘNG">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ScrollPane hbarPolicy="NEVER" layoutY="71.0" prefHeight="655.0" prefWidth="1096.0">
+         <content>
+            <VBox fx:id="container_vbox" prefHeight="200.0" prefWidth="1094.0" spacing="20.0">
+               <children>
+                  <TilePane layoutX="160.0" layoutY="40.0" prefHeight="212.0" prefWidth="838.0">
+                     <children>
+                        <Pane prefHeight="57.0" prefWidth="838.0">
+                           <children>
+                              <Label contentDisplay="RIGHT" graphicTextGap="30.0" layoutX="112.0" layoutY="10.0" text="Tên thực đơn">
+                                 <graphic>
+                                    <TextField fx:id="txt_name" onKeyTyped="#checkName" prefHeight="38.0" prefWidth="328.0" />
+                                 </graphic>
+                                 <font>
+                                    <Font name="Times New Roman" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="673.0" layoutY="10.0" mnemonicParsing="false" onAction="#save" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: #04AA6D;" text="Tạo" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman Bold" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Label fx:id="error_name" layoutX="260.0" layoutY="49.0" textFill="RED" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </TilePane>
+                  <TilePane prefHeight="201.0" prefWidth="882.0">
+                     <children>
+                        <TitledPane prefWidth="766.0" textFill="#087eff">
+                           <font>
+                              <Font name="Times New Roman Bold" size="25.0" />
+                           </font>
+                           <content>
+                              <VBox fx:id="morning_vbox" prefWidth="683.0" spacing="20.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Line endX="693.0" startX="-100.0" stroke="#c1bebe">
+                                       <VBox.margin>
+                                          <Insets top="-20.0" />
+                                       </VBox.margin>
+                                    </Line>
+                                 </children>
+                              </VBox>
+                           </content>
+                           <graphic>
+                              <Pane prefHeight="50.0" prefWidth="766.0">
+                                 <children>
+                                    <Text fill="#087eff" layoutX="34.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bữa sáng">
+                                       <font>
+                                          <Font name="Times New Roman" size="25.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </Pane>
+                           </graphic>
+                        </TitledPane>
+                     </children>
+                  </TilePane>
+                  <TilePane prefHeight="201.0" prefWidth="882.0">
+                     <children>
+                        <TitledPane prefWidth="766.0" textFill="#087eff">
+                           <font>
+                              <Font name="Times New Roman Bold" size="25.0" />
+                           </font>
+                           <content>
+                              <VBox fx:id="noon_vbox" prefWidth="683.0" spacing="20.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Line endX="693.0" startX="-100.0" stroke="#c1bebe">
+                                       <VBox.margin>
+                                          <Insets top="-20.0" />
+                                       </VBox.margin>
+                                    </Line>
+                                 </children>
+                              </VBox>
+                           </content>
+                           <graphic>
+                              <Pane prefHeight="50.0" prefWidth="766.0">
+                                 <children>
+                                    <Text fill="#087eff" layoutX="35.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bữa trưa">
+                                       <font>
+                                          <Font name="Times New Roman" size="25.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </Pane>
+                           </graphic>
+                        </TitledPane>
+                     </children>
+                  </TilePane>
+                  <TilePane prefHeight="201.0" prefWidth="882.0">
+                     <children>
+                        <TitledPane prefWidth="766.0" textFill="#087eff">
+                           <font>
+                              <Font name="Times New Roman Bold" size="25.0" />
+                           </font>
+                           <content>
+                              <VBox fx:id="night_vbox" prefWidth="683.0" spacing="20.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Line endX="693.0" startX="-100.0" stroke="#c1bebe">
+                                       <VBox.margin>
+                                          <Insets top="-20.0" />
+                                       </VBox.margin>
+                                    </Line>
+                                 </children>
+                              </VBox>
+                           </content>
+                           <graphic>
+                              <Pane prefHeight="50.0" prefWidth="766.0">
+                                 <children>
+                                    <Text fill="#087eff" layoutX="35.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bữa tối">
+                                       <font>
+                                          <Font name="Times New Roman" size="25.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </Pane>
+                           </graphic>
+                        </TitledPane>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="30.0" />
+                     </padding>
+                  </TilePane>
+               </children>
+               <padding>
+                  <Insets left="150.0" right="110.0" top="30.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
