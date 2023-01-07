@@ -1,0 +1,30 @@
+.root {
+    -fx-background-color: #fffcdc;
+}
+
+.scroll-pane {
+	-fx-background-color: transparent;
+}
+.scroll-pane .viewport {
+	-fx-background-color: #fffcdc;
+}
+.scroll-pane .scroll-bar .increment-arrow, .scroll-pane .scroll-bar .decrement-arrow {
+	-fx-shape: " ";
+	-fx-padding: 2;
+}
+Label {
+	
+	-fx-cursor: hand;
+	
+	-fx-content-display: center;
+}
+Label:hover {
+
+	-fx-effect: dropshadow(gaussian, #000000, 40.0, 0.3, 0.0, 0.0);
+	-fx-opacity: 1.0;
+}
+#c1{
+    -fx-border: solid;
+    -fx-background-color:white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="AddFoodView" fillWidth="false" onMouseMoved="#checkTextField1" prefHeight="725.0" prefWidth="1094.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cookingNotebook.controllers.AddFoodViewController">
+   <children>
+      <Pane fx:id="suamon" prefHeight="66.0" prefWidth="1146.0" style="-fx-background-color: #edeef1;">
+         <children>
+            <Text fx:id="function" layoutX="433.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman Bold" size="40.0" />
+               </font>
+            </Text>
+            <Button layoutX="832.0" layoutY="11.0" mnemonicParsing="false" onAction="#goBack" prefHeight="44.0" prefWidth="112.0" style="-fx-background-color: white; -fx-border-color: #007ee3; -fx-border-radius: 3; -fx-background-radius: 3;" text="Hủy" textFill="#007ee3">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btn_save" layoutX="968.0" layoutY="11.0" mnemonicParsing="false" onAction="#loadFoodToDatabase" prefHeight="44.0" prefWidth="112.0" style="-fx-background-color: #007ee3; -fx-border-color: #007ee3; -fx-border-radius: 3; -fx-background-radius: 3;" text="Lưu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <ScrollPane hbarPolicy="NEVER" hmax="0.0" prefHeight="658.0" prefWidth="1094.0">
+         <content>
+            <VBox fx:id="all" prefWidth="1093.0" style="-fx-background-color: white;">
+               <children>
+                  <Pane prefHeight="66.0" prefWidth="943.0">
+                     <children>
+                        <Label contentDisplay="RIGHT" text="Tên món ăn:">
+                           <graphic>
+                              <TextField fx:id="txt_name" onKeyTyped="#checkTextField" prefHeight="26.0" prefWidth="222.0">
+                                 <font>
+                                    <Font name="Times New Roman" size="18.0" />
+                                 </font></TextField>
+                           </graphic>
+                           <font>
+                              <Font name="Times New Roman Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label contentDisplay="RIGHT" layoutX="461.0" text="Thời gian nấu:">
+                           <graphic>
+                              <TextField fx:id="txt_time" onKeyTyped="#checkTextField" prefHeight="33.0" prefWidth="79.0">
+                                 <font>
+                                    <Font name="Times New Roman" size="18.0" />
+                                 </font></TextField>
+                           </graphic>
+                           <font>
+                              <Font name="Times New Roman Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="error_food" layoutX="125.0" layoutY="33.0" textFill="RED" />
+                        <Label fx:id="error_time" layoutX="607.0" layoutY="33.0" textFill="RED" />
+                        <Label layoutX="697.0" layoutY="4.0" text="phút" textFill="#768591">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="foodImg" prefHeight="158.0" prefWidth="943.0">
+                     <children>
+                        <Pane fx:id="chooseFoodImg" layoutX="305.0" onMouseClicked="#ChooseImageFood" prefHeight="158.0" prefWidth="200.0" style="-fx-border-color: #768591; -fx-border-style: dashed;">
+                           <children>
+                              <Label layoutX="84.0" layoutY="44.0" text="+" textFill="#768591">
+                                 <font>
+                                    <Font size="48.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Pane>
+                        <Label contentDisplay="RIGHT" text="Ảnh món ăn: " visible="false">
+                           <graphic>
+                              <TextField fx:id="url_image" editable="false" prefHeight="26.0" prefWidth="222.0">
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor></TextField>
+                           </graphic>
+                           <font>
+                              <Font name="Times New Roman Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="imgFood1" fitHeight="158.0" fitWidth="200.0" layoutX="305.0" pickOnBounds="true" visible="false" />
+                        <Label layoutY="3.0" text="Ảnh món ăn:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <Pane prefHeight="62.0" prefWidth="943.0">
+                     <children>
+                        <Text layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loại món ăn:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="22.0" />
+                           </font>
+                        </Text>
+                        <Label fx:id="loaiMon" layoutX="148.0" layoutY="13.0" prefHeight="32.0" prefWidth="163.0" text="Label" underline="true" visible="false">
+                           <font>
+                              <Font name="Times New Roman" size="22.0" />
+                           </font>
+                        </Label>
+                        <MenuButton fx:id="choiceBox" layoutX="148.0" layoutY="17.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: #768591; -fx-border-radius: 3;" text="Chọn loại món">
+                          <items>
+                            <MenuItem mnemonicParsing="false" onAction="#loadCategory">
+                                 <graphic>
+                                    <Pane prefHeight="25.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="5.0" text="Món ăn sáng">
+                                             <font>
+                                                <Font name="Times New Roman" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                 </graphic>
+                              </MenuItem>
+                            <MenuItem mnemonicParsing="false" onAction="#loadCategory">
+                                 <graphic>
+                                    <Pane prefHeight="25.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="5.0" text="Món chính">
+                                             <font>
+                                                <Font name="Times New Roman" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                 </graphic>
+                              </MenuItem>
+                              <MenuItem mnemonicParsing="false" onAction="#loadCategory">
+                                 <graphic>
+                                    <Pane prefHeight="25.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="5.0" text="Món phụ">
+                                             <font>
+                                                <Font name="Times New Roman" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                 </graphic>
+                              </MenuItem>
+                              <MenuItem mnemonicParsing="false" onAction="#loadCategory">
+                                 <graphic>
+                                    <Pane prefHeight="25.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="5.0" text="Món rau">
+                                             <font>
+                                                <Font name="Times New Roman" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                 </graphic>
+                              </MenuItem>
+                              <MenuItem mnemonicParsing="false" onAction="#loadCategory">
+                                 <graphic>
+                                    <Pane prefHeight="25.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="5.0" text="Món canh">
+                                             <font>
+                                                <Font name="Times New Roman" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                 </graphic>
+                              </MenuItem>
+                              <MenuItem mnemonicParsing="false" onAction="#loadCategory">
+                                 <graphic>
+                                    <Pane prefHeight="25.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="5.0" text="Món ăn kèm">
+                                             <font>
+                                                <Font name="Times New Roman" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                 </graphic>
+                              </MenuItem>
+                              <MenuItem mnemonicParsing="false" onAction="#loadCategory">
+                                 <graphic>
+                                    <Pane prefHeight="25.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="5.0" text="Món ăn đêm">
+                                             <font>
+                                                <Font name="Times New Roman" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                 </graphic>
+                              </MenuItem>
+                              <MenuItem mnemonicParsing="false" onAction="#loadCategory">
+                                 <graphic>
+                                    <Pane prefHeight="25.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="14.0" layoutY="5.0" text="Món ăn vặt">
+                                             <font>
+                                                <Font name="Times New Roman" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                 </graphic>
+                              </MenuItem>
+                          </items>
+                           <font>
+                              <Font name="Times New Roman" size="17.0" />
+                           </font>
+                        </MenuButton>
+                     </children>
+                  </Pane>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nhập nguyên liệu:">
+                     <font>
+                        <Font name="Times New Roman Bold" size="22.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </Text>
+                  <TilePane fx:id="Ingredient" prefWidth="200.0" vgap="10.0">
+                     <children>
+                        <Pane prefWidth="900.0">
+                           <children>
+                              <Label contentDisplay="RIGHT" style="-fx-content-display: right;" text="Tên:">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <graphic>
+                                    <TextField fx:id="txt_ten_nl" onKeyTyped="#checkTextField" prefHeight="30.0" prefWidth="173.0" style="-fx-font-size: 16;" />
+                                 </graphic>
+                              </Label>
+                              <Label contentDisplay="RIGHT" layoutX="256.0" text="Số lượng:">
+                                 <graphic>
+                                    <TextField fx:id="txt_soluong_nl" onKeyReleased="#checkTextField" prefHeight="30.0" prefWidth="173.0" style="-fx-font-size: 16;" />
+                                 </graphic>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label contentDisplay="RIGHT" layoutX="567.0" text="Đơn vị tính:">
+                                 <graphic>
+                                    <TextField fx:id="txt_donvitinh" onKeyReleased="#checkTextField" prefHeight="30.0" prefWidth="173.0" style="-fx-font-size: 16;" />
+                                 </graphic>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="error_ingr" layoutX="41.0" layoutY="37.0" textFill="RED" />
+                              <Label fx:id="error_soluong_nl" layoutX="338.0" layoutY="37.0" textFill="RED" />
+                              <Label fx:id="error_unit" layoutX="666.0" layoutY="37.0" textFill="RED" />
+                              <Pane layoutX="890.0" layoutY="7.0" prefHeight="22.0" prefWidth="20.0" />
+                           </children>
+                        </Pane>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </TilePane>
+                  <Button mnemonicParsing="false" onAction="#AddIngrLine" prefHeight="44.0" prefWidth="183.0" style="-fx-background-color: #007ee3; -fx-border-color: #007ee3; -fx-border-radius: 3; -fx-background-radius: 3;" text="Thêm nguyên liệu" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nhập bước làm:">
+                     <font>
+                        <Font name="Times New Roman Bold" size="22.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </Text>
+                  <VBox fx:id="VboxStep" prefWidth="100.0" spacing="20.0">
+                     <children>
+                        <Pane fx:id="step1" prefWidth="943.0">
+                           <children>
+                              <TextArea fx:id="txt_buoclam" layoutX="95.0" onKeyTyped="#checkTextField" prefHeight="92.0" prefWidth="751.0" style="-fx-font-family: Times New Roman; -fx-font-size: 16;" wrapText="true" />
+                              <Label fx:id="error_step" layoutX="101.0" layoutY="92.0" textFill="RED" />
+                              <Label layoutX="14.0" layoutY="36.0" text="Bước">
+                                 <font>
+                                    <Font name="Times New Roman" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="step_index" layoutX="56.0" layoutY="36.0" text="1">
+                                 <font>
+                                    <Font name="Times New Roman" size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="158.0" fitWidth="200.0" layoutX="305.0" layoutY="109.0" pickOnBounds="true" />
+                              <Pane layoutX="305.0" layoutY="109.0" onMouseClicked="#chooseStepImg" prefHeight="158.0" prefWidth="200.0" style="-fx-border-color: #768591; -fx-border-style: dashed;">
+                                 <children>
+                                    <Label layoutX="84.0" layoutY="44.0" text="+" textFill="#768591">
+                                       <font>
+                                          <Font size="48.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Pane>
+                              <Label layoutX="95.0" layoutY="124.0" text="Ảnh bước làm: " textFill="#768591">
+                                 <font>
+                                    <Font name="Times New Roman" size="18.0" />
+                                 </font>
+                              </Label>
+                              <AnchorPane layoutX="892.0" layoutY="35.0" prefHeight="22.0" prefWidth="20.0" />
+                           </children>
+                        </Pane>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <Button mnemonicParsing="false" onAction="#AddStep" prefHeight="46.0" prefWidth="158.0" style="-fx-background-color: #007ee3; -fx-border-color: #007ee3; -fx-border-radius: 3; -fx-background-radius: 3;" text="Thêm bước làm" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="30.0" top="30.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="100.0" right="50.0" top="50.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>
